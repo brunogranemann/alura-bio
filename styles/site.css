@@ -4,21 +4,35 @@ body {
     line-height: 1.5;
 }
 
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
 h1, h2 {
     font-family: 'Roboto Condensed', 'Arial', sans-serif;
 }
 
-main > h1 {
+main h1 {
     text-align: center;
+    font-size: 60px;
     background-color: #851944;
     color: #FFF;
     padding: 25px;
     border-bottom: 10px solid #000000;
 }
 
-div {
+h2 {
+    font-size: 30px;
+}
+
+main div {
     width: 720px;
     margin: 0 auto;
+    padding: 30px 0;
 }
 
 main a {
@@ -27,12 +41,14 @@ main a {
 
 p {
     text-align: justify;
+    margin: 20px 0;
 }
 
 blockquote {
     background-color: #D9E5E3;
     padding: 20px;
     width: 250px;
+    margin: 20px 40px;
     box-sizing: border-box;
     border: 10px solid #C2CCCA;
 }
@@ -44,13 +60,14 @@ aside {
     padding: 20px;
 }
 
+aside h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
 nav a {
     color: inherit;
     font-family: 'Roboto Condensed', 'Aria', sans-serif;
-}
-
-nav ul {
-    list-style-type: none;
 }
 
 body > footer {
