@@ -12,6 +12,13 @@ em {
     font-style: italic;
 }
 
+.conteudo-principal {
+    box-sizing: border-box;
+    width: 85%;
+    float: left;
+    padding-bottom: 60px;
+}
+
 .titulo{
     font-family: 'Roboto Condensed', 'Arial', sans-serif;
 }
@@ -23,23 +30,26 @@ em {
     color: #FFF;
     padding: 25px;
     border-bottom: 10px solid #000000;
+    text-transform: uppercase;
 }
 
 .titulo-secundario {
     font-size: 30px;
+    clear: both;
 }
 
-#conteudo-principal {
+.textos {
     width: 720px;
     margin: 0 auto;
     padding: 30px 0;
+    box-sizing: border-box;
 }
 
-#conteudo-principal a {
+.conteudo-principal a {
     color: #851944;
 }
 
-p {
+.conteudo-principal p {
     text-align: justify;
     margin: 20px 0;
 }
@@ -51,6 +61,21 @@ p {
     margin: 20px 40px;
     box-sizing: border-box;
     border: 10px solid #C2CCCA;
+}
+
+cite {
+    font-style: italic;
+    float: right;
+}
+
+.fiat {
+    float: right;
+    margin-right: 0;
+}
+
+.petrobras {
+    float: left;
+    margin-left: 0;
 }
 
 .artigo {
@@ -68,11 +93,28 @@ p {
     background-color: #E6E7E8;
 }
 
+.minha-foto {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .navegacao-site {
     background-color: #3C1D3D;
     color: #F2FFFC;
     padding: 20px;
     text-align: center;
+    box-sizing: border-box;
+    width: 15%;
+    position: relative;
+    top: 310px;
+}
+
+.minha-foto,
+.navegacao-site {
+    float: right;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
 }
 
 .navegacao_titulo {
@@ -83,14 +125,39 @@ p {
 .navegacao-site a {
     color: inherit;
     font-family: 'Roboto Condensed', 'Aria', sans-serif;
+    text-transform: lowercase;
+    text-decoration: none;
 }
 
-.icone-rede-social li {
+.icones-redes-sociais li {
     display: inline-block;
+}
+
+.icones-redes-sociais a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+}
+
+.github {
+    background-image: url(../images/github.png);
+}
+
+.twitter {
+    background-image: url(../images/twitter.png);
+}
+
+.linkedin {
+    background-image: url(../images/linkedin.png);
 }
 
 #rodape-pagina {
     background-color: #000000;
     color: #F2FFFC;
     padding: 20px;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
