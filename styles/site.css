@@ -1,6 +1,7 @@
 body {
     font-family: 'Crimson Text', 'Times New Roman', serif;
     background-color: #F2FFFC;
+    font-size: 120%;
     line-height: 1.5;
 }
 
@@ -16,32 +17,32 @@ em {
     box-sizing: border-box;
     width: 85%;
     float: left;
-    padding-bottom: 60px;
+    padding-bottom: 4em;
 }
 
-.titulo{
+.titulo {
     font-family: 'Roboto Condensed', 'Arial', sans-serif;
 }
 
 .titulo-principal {
     text-align: center;
-    font-size: 60px;
+    font-size: 300%;
     background-color: #851944;
     color: #FFF;
-    padding: 25px;
-    border-bottom: 10px solid #000000;
+    padding: 1.25rem;
+    border-bottom: .5rem solid #000000;
     text-transform: uppercase;
 }
 
-.titulo-secundario {
-    font-size: 30px;
+.titulo-texto {
+    font-size: 1.5em;
     clear: both;
 }
 
-.textos {
-    width: 720px;
+.container {
+    width: 80ch;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 1.5em 0;
     box-sizing: border-box;
 }
 
@@ -51,46 +52,7 @@ em {
 
 .conteudo-principal p {
     text-align: justify;
-    margin: 20px 0;
-}
-
-.citacao {
-    background-color: #D9E5E3;
-    padding: 20px;
-    width: 250px;
-    margin: 20px 40px;
-    box-sizing: border-box;
-    border: 10px solid #C2CCCA;
-}
-
-cite {
-    font-style: italic;
-    float: right;
-}
-
-.fiat {
-    float: right;
-    margin-right: 0;
-}
-
-.petrobras {
-    float: left;
-    margin-left: 0;
-}
-
-.artigo {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #CCC;
-    margin-bottom: 20px;
-}
-
-.artigo_botao {
-    padding: 8px;
-    margin: 16px;
-    display: block;
-    font-size: 24px;
-    text-align: center;
-    background-color: #E6E7E8;
+    margin: 1em 0;
 }
 
 .minha-foto {
@@ -102,24 +64,24 @@ cite {
 .navegacao-site {
     background-color: #3C1D3D;
     color: #F2FFFC;
-    padding: 20px;
+    padding: 1em;
     text-align: center;
     box-sizing: border-box;
     width: 15%;
     position: relative;
-    top: 310px;
+    top: 309px;
 }
 
 .minha-foto,
 .navegacao-site {
     float: right;
-    border-left: 10px solid black;
-    border-bottom: 10px solid black;
+    border-left: .5em solid black;
+    border-bottom: .5em solid black;
 }
 
 .navegacao_titulo {
-    font-size: 30px;
-    margin-bottom: 25px;
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
 .navegacao-site a {
@@ -155,7 +117,7 @@ cite {
 #rodape-pagina {
     background-color: #000000;
     color: #F2FFFC;
-    padding: 20px;
+    padding: 1em;
     clear: both;
     position: fixed;
     bottom: 0;
