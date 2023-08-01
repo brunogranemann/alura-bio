@@ -1,3 +1,12 @@
+.container > p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3C1D3D;
+    text-shadow: 1px 1px #000;
+    margin-right: .2ch;
+    line-height: 1;
+}
+
 .citacao {
     background-color: #D9E5E3;
     padding: 1em;
@@ -5,6 +14,7 @@
     margin: 1em 2em;
     box-sizing: border-box;
     border: .5em solid #C2CCCA;
+    position: relative;
 }
 
 cite {
@@ -12,12 +22,39 @@ cite {
     float: right;
 }
 
-.fiat {
+.citacao > p {
+    position: relative;
+}
+
+.citacao::before {
+    content: '"';
+    font-size: 10em;
+    color: #BBB;
+    line-height: .8em;
+    position: absolute;
+}
+
+.citacao:nth-of-type(odd) {
     float: right;
     margin-right: 0;
 }
 
-.petrobras {
+.citacao:nth-of-type(even) {
     float: left;
     margin-left: 0;
+}
+
+.citacao:hover,
+.citacao:focus {
+    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+
+.citacao:nth-of-type(odd):hover,
+.citacao:nth-of-type(odd):focus {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.citacao:nth-of-type(even):hover,
+.citacao:nth-of-type(even):focus {
+    transform: scale(1.2) rotate(-5deg);
 }

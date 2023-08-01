@@ -1,10 +1,10 @@
-.artigo {
-    padding-bottom: 1.5em;
-    margin-bottom: 1em;
+.artigo + .artigo {
+    padding-top: 1.5em;
+    margin-top: 1em;
     background-image: linear-gradient(to right, transparent, #CCC, transparent);
     background-repeat: no-repeat;
     background-size: 100% 1px;
-    background-position: bottom center;
+    background-position: top center;
 }
 
 .artigo_botao {

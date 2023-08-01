@@ -256,14 +256,6 @@ header {
     top: -2em;
 }
 
-.mais-recente {
-    background-color: #F2FFFC;
-}
-
-.blog .mais-recente a {
-    color: #F26;
-}
-
 .blog li {
     width: 30%;
 }
@@ -275,6 +267,7 @@ header {
 }
 
 .blog .inicio-post {
+    display: none;
     position: absolute;
     top: 4em;
     height: 8em;
@@ -283,6 +276,16 @@ header {
     background-color: #F2FFFC;
     color: #000;
     padding: 1.5em;
+}
+
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post {
+    display: block;
+}
+
+.blog a:hover {
+    color: #F26;
+    background-color: #F2FFFC;
 }
 
 footer {
