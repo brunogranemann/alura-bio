@@ -24,6 +24,10 @@ em {
     font-family: 'Roboto Condensed', 'Arial', sans-serif;
 }
 
+h1 {
+    text-shadow: 2px 2px #000;
+}
+
 .titulo-principal {
     text-align: center;
     font-size: 300%;
@@ -122,4 +126,5 @@ em {
     position: fixed;
     bottom: 0;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
