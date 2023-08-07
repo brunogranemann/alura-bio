@@ -6,6 +6,7 @@ html, body {
 body {
     perspective: 6px;
     perspective-origin: 50% 160px;
+    display: block;
 }
 
 .palavras-home, .titulo-principal {
@@ -14,6 +15,17 @@ body {
 
 .titulo-principal {
     background-image: linear-gradient(to bottom, );
+}
+
+.palavras-home {
+    animation: aparece 2s;
+}
+
+@keyframes aparece {
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
 }
 
 .foto-home {
@@ -143,6 +155,9 @@ header {
     right: 0;
     transform-origin: 0 0;
     transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
+    animation: aparece .5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
 }
 
 .secao {
@@ -178,6 +193,23 @@ header {
     font-size: 4em;
     display: inline-block;
     transform: rotate(-5deg) skew(-10deg);
+    animation: flutua 1s infinite;
+    position: relative;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+
+.saudacao em:hover {
+    animation-play-state: paused;
 }
 
 .botao-index {
@@ -190,6 +222,15 @@ header {
     margin: 2em auto;
     display: block;
     text-align: center;
+}
+
+.botao-index:focus,
+.botao-index:hover {
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
+    text-decoration: none;
+    transition: .5em;
 }
 
 .secao h2 {
@@ -220,13 +261,25 @@ header {
 }
 
 .trabalhos ul {
-    overflow: hidden;
-    border: .5em solid black;
+    display: flex;
 }
 
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+    flex: 1;
+    border: .5em solid black;
+}
+
+.trabalhos li:first-child {
+    order: 2;
+    transform: scale(1.2);
+}
+
+.trabalhos li:nth-child(2) {
+    order: 1;
+}
+
+.trabalhos li:last-child {
+    order: 3;
 }
 
 .trabalhos img {
@@ -283,7 +336,7 @@ header {
     display: block;
 }
 
-.blog a:hover {
+.blog > ol a:hover {
     color: #F26;
     background-color: #F2FFFC;
 }

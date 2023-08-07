@@ -14,6 +14,8 @@
     margin: 1em 2em;
     box-sizing: border-box;
     border: .5em solid #C2CCCA;
+    transition: box-shadow 1s, transform 1s;
+    transition-delay: 0s, 1s;
 }
 
 cite {
@@ -46,6 +48,7 @@ cite {
 .citacao:hover,
 .citacao:focus {
     box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+    transition-delay: 1s, 0s;
 }
 
 .citacao:nth-of-type(odd):hover,

@@ -3,6 +3,8 @@ body {
     background-color: #F2FFFC;
     font-size: 120%;
     line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 strong {
@@ -22,9 +24,8 @@ footer a:hover {
 
 .conteudo-principal {
     box-sizing: border-box;
-    width: calc(100% - .9 * 300px);
-    float: left;
     padding-bottom: 4em;
+    flex-grow: 1;
 }
 
 .titulo {
@@ -71,6 +72,7 @@ h1 {
     top: 0;
     right: 0;
     width: 300px;
+    border-bottom: .5em solid black;
 }
 
 .navegacao-site {
@@ -80,8 +82,7 @@ h1 {
     text-align: center;
     box-sizing: border-box;
     width: calc(.9 * 300px);
-    position: relative;
-    top: 309px;
+    padding-top: calc(300px + 1em);
 }
 
 .navegacao-site a:hover,
@@ -91,9 +92,7 @@ h1 {
 
 .minha-foto,
 .navegacao-site {
-    float: right;
     border-left: .5em solid black;
-    border-bottom: .5em solid black;
 }
 
 .navegacao_titulo {
