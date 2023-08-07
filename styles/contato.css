@@ -64,3 +64,32 @@ button:hover,
 button:focus {
     background-color: #8C1D3D;
 }
+
+.com-icone {
+    position: relative;
+}
+
+.com-icone::after {
+    content: "";
+    position: absolute;
+    background: #8C1D3D center center no-repeat;
+    background-size: 50% 50%;
+    width: 2em;
+    height: 2em;
+    top: 100%;
+    left: 0;
+}
+
+.com-icone + input {
+    position: relative;
+    left: 2em;
+    width: calc(100% - 2em);
+}
+
+label[for="nome"]::after {
+    background-image: url(../images/usuario.png);
+}
+
+label[for="email"]::after {
+    background-image: url(../images/email.png);
+}

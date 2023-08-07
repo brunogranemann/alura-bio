@@ -14,7 +14,6 @@
     margin: 1em 2em;
     box-sizing: border-box;
     border: .5em solid #C2CCCA;
-    position: relative;
 }
 
 cite {
@@ -57,4 +56,40 @@ cite {
 .citacao:nth-of-type(even):hover,
 .citacao:nth-of-type(even):focus {
     transform: scale(1.2) rotate(-5deg);
+}
+
+table {
+    margin: 1em 0;
+    border-collapse: separate;
+    border-spacing: .25em;
+}
+
+th, td {
+    padding: 1em;
+}
+
+th {
+    color: #FFF;
+    font-weight: bold;
+}
+
+thead th {
+    background-color: #3C1D3D;
+}
+
+tbody th {
+    background-color: #851944;
+}
+
+td {
+    background-color: #EEE;
+}
+
+table [colspan] {
+    text-align: center;
+    font-style: italic;
+}
+
+table [rowspan] {
+    vertical-align: middle;
 }
